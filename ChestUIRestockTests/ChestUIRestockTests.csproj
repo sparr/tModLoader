@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>ChestUIRestockTests</AssemblyName>
+    <RootNamespace>ChestUIRestockTests</RootNamespace>
+    <Nullable>disable</Nullable>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <!--
+    Testaria.props supplies the tModLoader install, the Testaria assemblies,
+    and the properties a .tmod-producing project has to set.
+  -->
+  <PropertyGroup>
+    <TestariaPath Condition="'$(TestariaPath)' == ''">$(TESTARIA_PATH)</TestariaPath>
+  </PropertyGroup>
+  <Import Project="$(TestariaPath)/build/Testaria.props" />
+
+  <!--
+    No subject mod: the code under test is tModLoader's own ChestUI.Restock,
+    which lives in tModLoader.dll and is referenced by Testaria.props already.
+  -->
+
+</Project>

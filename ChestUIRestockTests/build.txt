@@ -1,0 +1,7 @@
+author = Clarence "Sparr" Risher
+displayName = ChestUI Restock Tests
+version = 0.1
+side = NoSync
+modReferences = Testaria
+includeSource = true
+buildIgnore = *.csproj, *.user, *.sh, obj\*, bin\*, .vs\*, .git\*
